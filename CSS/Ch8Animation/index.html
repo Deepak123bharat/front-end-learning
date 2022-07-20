@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background: yellow;
+            width: 40vw;
+            height: 40vh;
+            display: grid;
+            grid-gap: 0px;
+            grid-template-columns: auto auto;
+            padding: 2px;
+        }
+        .box{
+            background: aqua;
+            width: 50%;
+            height: 50%;
+            border:2px solid blue;
+            /* transform: translate(134px, 56px) rotate(20deg) skew(20deg); */
+            transform: rotateY(45deg);
+        }
+        img{
+            width: 50px;
+            transition-property: width;
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+            /* height: 100px; */
+        }
+        img:hover{
+            width:100px;
+        }
+    </style>
+   
+    
+</head>
+<body>
+   <div class="container">
+        <div class="box">
+            <img id="myImage" src="https://cdn.pixabay.com/photo/2022/07/12/00/08/japan-7316252_960_720.jpg" alt="image">
+            <button id="btn">Toggle</button>
+        </div>
+   </div>
+     
+</body>
+<script>
+    btn.addEventListener("click", ()=>{
+        myImage.style.width = "500px";
+    })
+</script>
+</html>

@@ -1,0 +1,10 @@
+*{
+    margin: 2px;
+    background: red;
+}
+.red{
+    background: rgb(0, 0, 255);
+}
+.green{
+    background: #b97fff;
+}

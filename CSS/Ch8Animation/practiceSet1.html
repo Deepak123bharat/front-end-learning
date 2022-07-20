@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style-type: none;
+            display: inline-block;
+        }
+        nav{
+            background: black;
+            color: white;
+        }
+        .bar{
+            width: 10vw;
+            height: 15px;
+            background: red;
+            /* transition-property: width;
+            transition-duration: 2s; */
+            animation: ani 0.5s ease-in 0s 5;
+        }
+        /* .bar:hover{
+            width:100vw;
+        } */
+        @keyframes ani {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform:rotate(180deg);
+            }
+        }
+        /* .bar{
+            width: 100vw;
+            height: 1px;
+            background: red;
+            animation: progressBar 1s ease-in 0s 5 normal;
+        }
+        @keyframes progressBar {
+            0%{
+                width: 0vw;
+            }
+            50%{
+                width: 80vw;
+            }
+            100%{
+                width: 90vw;
+            }
+        } */
+    </style>
+</head>
+<body>
+    <header>
+        <div class="bar">
+
+        </div>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <main></main>
+    <footer></footer>
+</body>
+</html>
