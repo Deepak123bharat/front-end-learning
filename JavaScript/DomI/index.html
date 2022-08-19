@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom1</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        .div{
+            display:  flex;
+            justify-content: space-evenly;
+            border: 2px dashed red;
+        }
+        .input{
+            text-align: left;
+        }
+        .input{
+            width: 40vw;
+        }
+        p{
+            width: 40vh;
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://www.masaischool.com/img/navbar/logo.svg" alt="">
+    <div class="div">
+        <form class="form" action="signup">
+            <h3>Sign Up</h3>
+            <div class="input">
+                Full name<br>
+                <input id="name" type="text" placeholder="Enter your full name"><br>
+                Email<br>
+                <input id="email" type="text" placeholder="Enter Email"><br>
+                Password<br>
+                <input id="password" type="text" placeholder="Enter password">
+                <p>By signing up, I accept the Masai School <a href="ok">Terms of Service</a>  and acknowledge the <a href="ok">Privacy Policy</a> </p>
+            </div>
+            
+            <button id="btn" type="button" onclick="catchValue()">SIGH UP</button>
+            <p>Already have an account? <a href="ok">Sign In</a></p>
+            <h1 id="output"></h1>
+        </form>
+    </div>
+</body>
+<script>
+        document.getElementById("name").addEventListener("keyup",()=>{
+            var sName = document.querySelector("#name").value 
+            document.getElementById("output").innerText ="Hi "+sName
+        })
+        
+        e.preventDefault()
+</script>
+</html>
